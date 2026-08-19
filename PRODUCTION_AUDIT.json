@@ -1,0 +1,965 @@
+{
+  "live": {
+    "index.html": {
+      "status": 200,
+      "final_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/index.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 40707
+    },
+    "chambres.html": {
+      "status": 200,
+      "final_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/chambres.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 32661
+    },
+    "experiences.html": {
+      "status": 200,
+      "final_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/experiences.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 29070
+    },
+    "galerie.html": {
+      "status": 200,
+      "final_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/galerie.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 31133
+    },
+    "contact.html": {
+      "status": 200,
+      "final_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/contact.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 25930
+    },
+    "404.html": {
+      "status": 200,
+      "final_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/404.html",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 3083
+    },
+    "robots.txt": {
+      "status": 200,
+      "final_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/robots.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 206
+    },
+    "sitemap.xml": {
+      "status": 200,
+      "final_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/sitemap.xml",
+      "content_type": "application/xml",
+      "bytes": 3131
+    }
+  },
+  "local_files": {
+    "index.html": true,
+    "chambres.html": true,
+    "experiences.html": true,
+    "galerie.html": true,
+    "contact.html": true,
+    "404.html": true,
+    "robots.txt": true,
+    "sitemap.xml": true
+  },
+  "asset_references": [
+    {
+      "path": "assets/hero-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/hero-1440.webp",
+      "dimensions": [
+        1440,
+        810
+      ],
+      "format": "WEBP",
+      "bytes": 82318,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/hero-1440.webp",
+      "live_status": 200,
+      "live_bytes": 82318,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/story-1080.webp",
+      "local_exists": true,
+      "local_path": "assets/story-1080.webp",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "format": "WEBP",
+      "bytes": 64026,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/story-1080.webp",
+      "live_status": 200,
+      "live_bytes": 64026,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/gal-1-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/gal-1-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/gal-1-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/gal-2-1080.webp",
+      "local_exists": true,
+      "local_path": "assets/gal-2-1080.webp",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "format": "WEBP",
+      "bytes": 64026,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/gal-2-1080.webp",
+      "live_status": 200,
+      "live_bytes": 64026,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/gal-3-1080.webp",
+      "local_exists": true,
+      "local_path": "assets/gal-3-1080.webp",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "format": "WEBP",
+      "bytes": 64026,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/gal-3-1080.webp",
+      "live_status": 200,
+      "live_bytes": 64026,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/gal-4-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/gal-4-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/gal-4-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/rooms-hero-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/rooms-hero-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/rooms-hero-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/room-twin-1080.webp",
+      "local_exists": true,
+      "local_path": "assets/room-twin-1080.webp",
+      "dimensions": [
+        1080,
+        810
+      ],
+      "format": "WEBP",
+      "bytes": 64962,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/room-twin-1080.webp",
+      "live_status": 200,
+      "live_bytes": 64962,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/room-king-1080.webp",
+      "local_exists": true,
+      "local_path": "assets/room-king-1080.webp",
+      "dimensions": [
+        1080,
+        810
+      ],
+      "format": "WEBP",
+      "bytes": 64962,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/room-king-1080.webp",
+      "live_status": 200,
+      "live_bytes": 64962,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/suite-junior-1080.webp",
+      "local_exists": true,
+      "local_path": "assets/suite-junior-1080.webp",
+      "dimensions": [
+        1080,
+        810
+      ],
+      "format": "WEBP",
+      "bytes": 64962,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/suite-junior-1080.webp",
+      "live_status": 200,
+      "live_bytes": 64962,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/suite-senior-1080.webp",
+      "local_exists": true,
+      "local_path": "assets/suite-senior-1080.webp",
+      "dimensions": [
+        1080,
+        810
+      ],
+      "format": "WEBP",
+      "bytes": 64962,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/suite-senior-1080.webp",
+      "live_status": 200,
+      "live_bytes": 64962,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/exp-hero-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/exp-hero-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/exp-hero-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/kortoba-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/kortoba-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/kortoba-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/sidi-1080.webp",
+      "local_exists": true,
+      "local_path": "assets/sidi-1080.webp",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "format": "WEBP",
+      "bytes": 64026,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/sidi-1080.webp",
+      "live_status": 200,
+      "live_bytes": 64026,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/lala-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/lala-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/lala-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/events-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/events-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/events-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/gallery-hero-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/gallery-hero-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/gallery-hero-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/gal-5-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/gal-5-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/gal-5-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/gal-6-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/gal-6-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/gal-6-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/gal-7-1080.webp",
+      "local_exists": true,
+      "local_path": "assets/gal-7-1080.webp",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "format": "WEBP",
+      "bytes": 64026,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/gal-7-1080.webp",
+      "live_status": 200,
+      "live_bytes": 64026,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/gal-8-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/gal-8-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/gal-8-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    },
+    {
+      "path": "assets/contact-hero-1440.webp",
+      "local_exists": true,
+      "local_path": "assets/contact-hero-1440.webp",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "WEBP",
+      "bytes": 77210,
+      "live_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/contact-hero-1440.webp",
+      "live_status": 200,
+      "live_bytes": 77210,
+      "live_content_type": "image/webp"
+    }
+  ],
+  "placeholders": [
+    {
+      "file": "index.html",
+      "term": "hotel-soltane.dz",
+      "count": 1
+    },
+    {
+      "file": "chambres.html",
+      "term": "hotel-soltane.dz",
+      "count": 1
+    },
+    {
+      "file": "experiences.html",
+      "term": "hotel-soltane.dz",
+      "count": 1
+    },
+    {
+      "file": "galerie.html",
+      "term": "hotel-soltane.dz",
+      "count": 1
+    },
+    {
+      "file": "contact.html",
+      "term": "hotel-soltane.dz",
+      "count": 1
+    },
+    {
+      "file": "sitemap.xml",
+      "term": "hotel-soltane.dz",
+      "count": 1
+    },
+    {
+      "file": "robots.txt",
+      "term": "hotel-soltane.dz",
+      "count": 1
+    },
+    {
+      "file": "README.md",
+      "term": "hotel-soltane.dz",
+      "count": 3
+    },
+    {
+      "file": "QA_REPORT.md",
+      "term": "hotel-soltane.dz",
+      "count": 1
+    }
+  ],
+  "navigation": [
+    {
+      "from": "index.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "index.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "index.html#contact",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "index.html#contact",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "index.html#contact",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "index.html#contact",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "chambres.html",
+      "href": "index.html#contact",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "index.html",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "index.html#contact",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "index.html#contact",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "index.html#contact",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "index.html#contact",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "experiences.html",
+      "href": "index.html#contact",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "index.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "galerie.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "index.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "index.html#story",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "chambres.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "experiences.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "galerie.html",
+      "local_exists": true
+    },
+    {
+      "from": "contact.html",
+      "href": "contact.html",
+      "local_exists": true
+    },
+    {
+      "from": "404.html",
+      "href": "index.html",
+      "local_exists": true
+    },
+    {
+      "from": "404.html",
+      "href": "contact.html",
+      "local_exists": true
+    }
+  ],
+  "phone_bdi": [
+    {
+      "file": "index.html",
+      "href": "tel:+21320224141",
+      "has_bdi": true,
+      "text": "+213 20 22 41 41"
+    },
+    {
+      "file": "index.html",
+      "href": "tel:+21320224455",
+      "has_bdi": true,
+      "text": "+213 20 22 44 55"
+    },
+    {
+      "file": "index.html",
+      "href": "tel:+21320224747",
+      "has_bdi": true,
+      "text": "+213 20 22 47 47"
+    },
+    {
+      "file": "index.html",
+      "href": "tel:+21320224545",
+      "has_bdi": true,
+      "text": "+213 20 22 45 45"
+    },
+    {
+      "file": "index.html",
+      "href": "tel:+21320224141",
+      "has_bdi": true,
+      "text": "+213 20 22 41 41"
+    },
+    {
+      "file": "index.html",
+      "href": "tel:+21320224455",
+      "has_bdi": true,
+      "text": "+213 20 22 44 55"
+    },
+    {
+      "file": "index.html",
+      "href": "tel:+21320224747",
+      "has_bdi": true,
+      "text": "+213 20 22 47 47"
+    },
+    {
+      "file": "index.html",
+      "href": "tel:+21320224545",
+      "has_bdi": true,
+      "text": "+213 20 22 45 45"
+    },
+    {
+      "file": "chambres.html",
+      "href": "tel:+21320224141",
+      "has_bdi": true,
+      "text": "Appeler +213 20 22 41 41"
+    },
+    {
+      "file": "chambres.html",
+      "href": "tel:+21320224141",
+      "has_bdi": true,
+      "text": "+213 20 22 41 41"
+    },
+    {
+      "file": "chambres.html",
+      "href": "tel:+21320224455",
+      "has_bdi": true,
+      "text": "+213 20 22 44 55"
+    },
+    {
+      "file": "chambres.html",
+      "href": "tel:+21320224747",
+      "has_bdi": true,
+      "text": "+213 20 22 47 47"
+    },
+    {
+      "file": "chambres.html",
+      "href": "tel:+21320224545",
+      "has_bdi": true,
+      "text": "+213 20 22 45 45"
+    },
+    {
+      "file": "experiences.html",
+      "href": "tel:+21320224141",
+      "has_bdi": true,
+      "text": "Appeler +213 20 22 41 41"
+    },
+    {
+      "file": "contact.html",
+      "href": "tel:+21320224141",
+      "has_bdi": true,
+      "text": "Appeler +213 20 22 41 41"
+    }
+  ],
+  "metadata": {
+    "index.html": {
+      "lang": "fr",
+      "dir": "ltr",
+      "canonical": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/",
+      "og_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/"
+    },
+    "chambres.html": {
+      "lang": "fr",
+      "dir": "ltr",
+      "canonical": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/chambres.html",
+      "og_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/chambres.html"
+    },
+    "experiences.html": {
+      "lang": "fr",
+      "dir": "ltr",
+      "canonical": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/experiences.html",
+      "og_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/experiences.html"
+    },
+    "galerie.html": {
+      "lang": "fr",
+      "dir": "ltr",
+      "canonical": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/galerie.html",
+      "og_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/galerie.html"
+    },
+    "contact.html": {
+      "lang": "fr",
+      "dir": "ltr",
+      "canonical": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/contact.html",
+      "og_url": "https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/contact.html"
+    },
+    "404.html": {
+      "lang": "fr",
+      "dir": "ltr",
+      "canonical": null,
+      "og_url": null
+    }
+  },
+  "errors": [],
+  "sitemap_xml_valid": true
+}
