@@ -1,0 +1,5 @@
+# [À CONFIRMER — DOMAINE] Replace the sitemap host if the final production domain differs.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.hotel-soltane.dz/sitemap.xml

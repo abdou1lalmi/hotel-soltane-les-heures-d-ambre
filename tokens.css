@@ -1,0 +1,61 @@
+:root {
+  /* Couleurs */
+  --ivory: #F6F1E7;
+  --ivory-deep: #EEE6D6;
+  --ink: #211D19;
+  --ink-soft: #575046;
+  --cypress: #22392E;
+  --amber: #B56B3A;
+  --amber-text: #8F5127;
+
+  /* Typographie */
+  --serif: 'Cormorant Garamond', 'Amiri', serif;
+  --sans: 'Manrope', 'Noto Sans Arabic', system-ui, sans-serif;
+
+  /* Layout */
+  --max: 1240px;
+  --ease: cubic-bezier(.22, .61, .21, 1);
+  --pad: clamp(1.25rem, 5vw, 4rem);
+
+  /* Espacements */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 5rem;
+
+  /* Breakpoints.
+     CSS custom properties cannot be interpolated into media-query ranges;
+     these values are kept here as a design-system reference while the
+     canonical query ranges are defined below. */
+  --bp-mobile-min: 320px;
+  --bp-mobile-max: 390px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+}
+
+html[dir='rtl'] {
+  --serif: 'Amiri', 'Cormorant Garamond', serif;
+  --sans: 'Noto Sans Arabic', 'Manrope', system-ui, sans-serif;
+}
+
+/* Breakpoint reference queries: use the token values above as the source of truth. */
+@media (min-width: 320px) and (max-width: 390px) {
+  :root {
+    --viewport-range: mobile;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --viewport-range: tablet;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --viewport-range: desktop;
+  }
+}

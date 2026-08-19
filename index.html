@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="fr" dir="ltr" data-page="home">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6F1E7">
+
+  <!-- [À CONFIRMER — DOMAINE] Remplacer le domaine avant mise en production finale. -->
+  <title>Hôtel Soltane | Alger — Les heures d'ambre</title>
+  <meta name="description" content="Hôtel Soltane, une adresse urbaine feutrée à Alger. 140 chambres et suites, restaurant Kortoba, hammam Lala Amira.">
+  <meta name="robots" content="index, follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=()">
+
+  <link rel="canonical" href="https://www.hotel-soltane.dz/fr">
+  <link rel="alternate" hreflang="fr" href="https://www.hotel-soltane.dz/fr">
+  <link rel="alternate" hreflang="ar" href="https://www.hotel-soltane.dz/ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.hotel-soltane.dz/fr">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hôtel Soltane">
+  <meta property="og:title" content="Hôtel Soltane | Alger">
+  <meta property="og:description" content="140 chambres et suites, restaurant Kortoba, hammam Lala Amira. Une adresse urbaine feutrée à Alger.">
+  <meta property="og:url" content="https://www.hotel-soltane.dz/fr">
+  <meta property="og:locale" content="fr_DZ">
+  <meta property="og:locale:alternate" content="ar_DZ">
+  <!-- [À CONFIRMER — IMAGE SOCIALE] Remplacer l’image placeholder par le visuel OG final. -->
+  <meta property="og:image" content="https://www.hotel-soltane.dz/assets/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Hôtel Soltane",
+    "description": "Hôtel Soltane, une adresse urbaine feutrée à Alger. 140 chambres et suites, restaurant Kortoba, hammam Lala Amira.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 Rue Mouloud Belhouchat",
+      "addressLocality": "Hussein Dey, Alger",
+      "addressCountry": "DZ"
+    },
+    "telephone": [
+      "+213 20 22 41 41",
+      "+213 20 22 44 55",
+      "+213 20 22 47 47",
+      "+213 20 22 45 45"
+    ],
+    "email": "reservation@hotel-soltane.com",
+    "sameAs": ["https://www.instagram.com/hotel.soltane/"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+  <link rel="stylesheet" href="./tokens.css">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./typography.css">
+
+  <style>
+    :root { --line: rgb(33 29 25 / 14%); }
+    [hidden] { display: none !important; }
+    .skip-link { position: absolute; inset-inline-start: 1rem; inset-block-start: -4rem; z-index: 200; padding: .6rem 1.1rem; background: var(--ink); color: var(--ivory); text-decoration: none; transition: inset-block-start .2s var(--ease); }
+    .skip-link:focus { inset-block-start: 1rem; }
+    .wrap { max-inline-size: var(--max); margin-inline: auto; padding-inline: var(--pad); }
+    section { position: relative; padding-block: clamp(5rem, 11vw, 9rem); }
+    .nav { color: var(--ivory); border-block-end: 1px solid transparent; }
+    .nav.is-solid { background: rgb(246 241 231 / 92%); backdrop-filter: blur(12px); color: var(--ink); border-block-end-color: var(--line); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; block-size: 4.4rem; max-inline-size: var(--max); margin-inline: auto; padding-inline: var(--pad); }
+    .brand { display: flex; align-items: center; gap: .7rem; color: inherit; text-decoration: none; }
+    .brand svg { inline-size: 30px; block-size: auto; }
+    .brand-name { font-family: var(--serif); font-size: 1.22rem; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; padding: 0; }
+    .nav-links a { font-size: .82rem; font-weight: 500; letter-spacing: .14em; text-decoration: none; text-transform: uppercase; opacity: .85; }
+    .nav-links a:hover { opacity: 1; text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 6px; }
+    .nav-actions { display: flex; align-items: center; gap: 1.2rem; }
+    .lang-switch { display: flex; gap: .5rem; font-size: .8rem; font-weight: 600; letter-spacing: .1em; }
+    .lang-switch button { padding: .2rem; opacity: .78; background: rgb(33 29 25 / 58%); color: var(--ivory); }
+    .lang-switch button[aria-pressed="true"] { opacity: 1; text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 5px; }
+    .nav.is-solid .lang-switch button { background: transparent; color: var(--ink); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: .7rem; padding: .85rem 1.7rem; border: 1px solid currentColor; font-size: .8rem; font-weight: 600; letter-spacing: .14em; line-height: 1.2; text-decoration: none; text-transform: uppercase; transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease); }
+    .btn-amber { border-color: var(--amber); background: var(--amber); color: var(--ivory); }
+    .btn-amber:hover { border-color: var(--amber-text); background: var(--amber-text); }
+    .btn-ghost:hover { border-color: var(--ink); background: var(--ink); color: var(--ivory); }
+    .nav .btn { padding: .6rem 1.25rem; }
+    .nav:not(.is-solid) .btn-ghost { border-color: rgb(246 241 231 / 70%); }
+    .burger { display: none; flex-direction: column; gap: 6px; padding: .5rem; }
+    .burger span { inline-size: 24px; block-size: 1.5px; background: currentColor; transition: transform .3s var(--ease), opacity .3s var(--ease); }
+    .burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    .burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+    .nav-menu { display: none; }
+
+    .hero { display: flex; align-items: flex-end; min-block-size: 100svh; overflow: hidden; padding-block: 0 clamp(4rem, 8vw, 6rem); color: var(--ivory); }
+    .media { position: relative; overflow: hidden; background: linear-gradient(168deg, #2B2118 0%, #6B4A2E 42%, #B56B3A 78%, #D9A05B 100%); }
+    .media img { inline-size: 100%; block-size: 100%; object-fit: cover; }
+    .media.is-fallback img { display: none; }
+    .media.is-fallback::after { position: absolute; inset: 0; background: radial-gradient(ellipse 70% 50% at 70% 20%, rgb(217 160 91 / 50%), transparent 60%); content: ''; }
+    .hero > .media { position: absolute; inset: 0; }
+    .hero > .media::before { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to top, rgb(23 18 13 / 78%) 0%, rgb(23 18 13 / 25%) 55%, rgb(23 18 13 / 15%) 100%); content: ''; }
+    .hero-content { position: relative; z-index: 2; }
+    .hero .kicker { display: block; margin-block-end: 1.2rem; color: #E8C9A0; }
+    .hero .lead { max-inline-size: 56ch; margin-block: 1.6rem 2.4rem; color: rgb(246 241 231 / 88%); font-size: clamp(1.05rem, 1.4vw, 1.2rem); }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .hero .btn-ghost { border-color: rgb(246 241 231 / 75%); color: var(--ivory); }
+    .hero .btn-ghost:hover { background: var(--ivory); color: var(--ink); }
+    .scroll-hint { position: absolute; inset-inline-end: var(--pad); inset-block-end: 2.2rem; z-index: 2; display: flex; align-items: center; gap: .8rem; color: rgb(246 241 231 / 70%); font-size: .72rem; letter-spacing: .24em; text-transform: uppercase; writing-mode: vertical-rl; }
+    .scroll-hint::after { inline-size: 1px; block-size: 3.2rem; background: var(--amber); content: ''; }
+
+    .split { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
+    .split-text { grid-column: 1 / span 5; position: sticky; inset-block-start: 7rem; }
+    .split-media { grid-column: 7 / span 6; margin-block-start: clamp(2rem, 6vw, 5rem); }
+    .split-media .media { aspect-ratio: 4 / 5; }
+    .fig-caption { display: flex; gap: .8rem; margin-block-start: .8rem; color: var(--ink-soft); font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; }
+    .fig-caption b { color: var(--amber-text); font-weight: 600; }
+    .lead { max-inline-size: 56ch; color: var(--ink-soft); font-size: clamp(1.05rem, 1.4vw, 1.2rem); }
+    .rail { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.5rem, 4vw, 3rem); margin-block-start: 3rem; }
+    .rail-item { border-block-start: 1px solid var(--line); padding-block-start: 1.4rem; }
+    .rail-item h3 { margin-block: .9rem .6rem; font-size: 1.6rem; }
+    .rail-item > p:last-child { color: var(--ink-soft); font-size: .95rem; }
+    .section-cta { margin-block-start: 2rem; text-align: center; }
+
+    .gallery { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(.8rem, 2vw, 1.4rem); margin-block-start: 3rem; }
+    .gallery figure { position: relative; cursor: zoom-in; }
+    .gallery .media { transition: transform .6s var(--ease); }
+    .gallery figure:hover .media { transform: scale(1.025); }
+    .g-a { grid-column: 1 / span 7; }
+    .g-a .media, .g-d .media { aspect-ratio: 16 / 10; }
+    .g-b { grid-column: 8 / span 5; margin-block-start: clamp(1rem, 5vw, 4rem); }
+    .g-b .media, .g-c .media { aspect-ratio: 4 / 5; }
+    .g-c { grid-column: 1 / span 5; }
+    .g-d { grid-column: 6 / span 7; margin-block-start: clamp(-3rem, -2vw, -1rem); }
+
+    dialog { max-inline-size: min(92vw, 1000px); border: 0; }
+    dialog.lightbox { inline-size: 92vw; padding: 0; background: transparent; }
+    dialog.lightbox::backdrop { background: rgb(23 18 13 / 88%); backdrop-filter: blur(6px); }
+    dialog.lightbox .media { aspect-ratio: 16 / 10; }
+    .lightbox-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1rem; color: var(--ivory); }
+    .lightbox-close { padding: .55rem 1.1rem; border: 1px solid rgb(246 241 231 / 50%); color: inherit; font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; }
+    .lightbox-close:hover { background: var(--ivory); color: var(--ink); }
+
+    .band { background: var(--cypress); color: var(--ivory); }
+    .band .caption { color: #C9D6C4; }
+    .band .lead { color: rgb(246 241 231 / 82%); }
+    .band blockquote { max-inline-size: 26ch; margin-block-start: 2.5rem; font-family: var(--serif); font-size: clamp(1.6rem, 3.4vw, 2.6rem); line-height: 1.3; }
+    .insta-link { display: inline-flex; align-items: center; gap: .7rem; margin-block-start: 2.5rem; padding-block-end: .4rem; border-block-end: 1px solid var(--amber); color: var(--ivory); font-size: .85rem; font-weight: 600; letter-spacing: .14em; text-decoration: none; text-transform: uppercase; }
+    .insta-link:hover { color: #E8C9A0; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); margin-block-start: 3rem; }
+    .contact-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .note { max-inline-size: 44ch; color: var(--ink-soft); font-size: .85rem; }
+    .contact-phones { display: flex; flex-wrap: wrap; gap: .65rem 1.25rem; margin-block-start: 1.25rem; color: var(--ink-soft); font-size: .9rem; }
+    .contact-phones a { text-decoration-color: var(--amber); text-underline-offset: .2em; }
+
+    footer { padding-block: clamp(3.5rem, 7vw, 5.5rem) 2.5rem; background: var(--ink); color: var(--ivory); }
+    .footer-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(2rem, 6vw, 5rem); }
+    footer h2 { color: var(--ivory); font-size: clamp(1.7rem, 3vw, 2.3rem); }
+    .newsletter { display: grid; grid-template-columns: 1fr auto; gap: .55rem; max-inline-size: 420px; margin-block-start: 1.6rem; }
+    .newsletter label { grid-column: 1 / -1; color: rgb(246 241 231 / 72%); font-size: .76rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+    .newsletter input { min-inline-size: 0; padding: .85rem 1rem; border: 1px solid rgb(246 241 231 / 35%); border-inline-end: 0; background: transparent; color: var(--ivory); font: inherit; }
+    .newsletter input::placeholder { color: rgb(246 241 231 / 50%); }
+    .newsletter button { padding: .85rem 1.4rem; background: var(--amber-text); color: var(--ivory); font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+    .newsletter button:hover { background: var(--amber-text); }
+    .form-status { min-block-size: 1.4em; margin-block-start: .8rem; color: #C9D6C4; font-size: .85rem; }
+    .footer-links { display: flex; flex-direction: column; align-items: flex-start; gap: .9rem; }
+    .footer-links a { color: rgb(246 241 231 / 80%); font-size: .9rem; text-decoration: none; }
+    .footer-links a:hover { color: var(--ivory); text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 5px; }
+    .footer-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-block-start: 3.5rem; padding-block-start: 1.6rem; border-block-start: 1px solid rgb(246 241 231 / 15%); color: rgb(246 241 231 / 55%); font-size: .75rem; }
+
+    .booking-panel { inline-size: min(92vw, 680px); padding: clamp(1.4rem, 4vw, 2.5rem); background: var(--ivory); color: var(--ink); }
+    .booking-panel::backdrop { background: rgb(33 29 25 / 72%); backdrop-filter: blur(4px); }
+    .booking-panel .lightbox-bar { padding-block-start: 0; color: var(--ink); }
+    .booking-panel .lightbox-close { border-color: var(--line); }
+    .booking-panel .lightbox-close:hover { background: var(--ink); color: var(--ivory); }
+    .booking-panel h2 { margin-block: .75rem 0; }
+    .booking-description { max-inline-size: 50ch; color: var(--ink-soft); }
+    .booking-channels { display: grid; gap: .75rem; margin-block-start: 1.6rem; }
+    .booking-channel { display: flex; flex-wrap: wrap; align-items: baseline; gap: .75rem; padding-block: .75rem; border-block-start: 1px solid var(--line); }
+    .booking-channel-label { min-inline-size: 7.5rem; font-weight: 600; }
+    .booking-channel a { text-decoration-color: var(--amber); text-underline-offset: .2em; }
+    .booking-channel .btn { margin-block-start: .35rem; }
+    .whatsapp-note { color: var(--ink-soft); font-size: .85rem; }
+
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+    .reveal.is-visible { opacity: 1; transform: none; }
+
+    @media (max-width: 900px) {
+      .nav-links, .nav-inner .js-booking-open { display: none; }
+      .burger { display: flex; }
+      .nav-menu { position: fixed; inset-inline: 0; inset-block-start: 4.4rem; z-index: 49; flex-direction: column; gap: 1.3rem; padding: 2rem var(--pad) 2.5rem; border-block-end: 1px solid var(--line); background: var(--ivory); color: var(--ink); }
+      .nav-menu.is-open { display: flex; }
+      .nav-menu a { font-family: var(--serif); font-size: 1.5rem; text-decoration: none; }
+      .nav-menu .btn { align-self: flex-start; margin-block-start: .5rem; font-family: var(--sans); font-size: .8rem; }
+      .split-text { grid-column: 1 / -1; position: static; }
+      .split-media { grid-column: 1 / -1; }
+      .rail { grid-template-columns: 1fr; }
+      .g-a, .g-b, .g-c, .g-d { grid-column: 1 / -1; margin-block-start: 0; }
+      .contact-grid, .footer-grid { grid-template-columns: 1fr; }
+      .scroll-hint { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      .nav-inner { block-size: 4rem; }
+      .hero-ctas, .hero-ctas .btn, .contact-actions .btn { inline-size: 100%; }
+      .hero-ctas .btn { justify-content: center; }
+      .newsletter { grid-template-columns: 1fr; }
+      .newsletter input { border-inline-end: 1px solid rgb(246 241 231 / 35%); }
+      .newsletter button { justify-self: start; }
+      .footer-legal { flex-direction: column; }
+      .booking-channel { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .preloader { display: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
+
+  <!-- Phase A Preloader: sessionStorage skip, reduced-motion removal, 1.2s maximum. -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <svg viewBox="0 0 44 40" width="54" height="49" fill="none" aria-hidden="true">
+        <path d="M6 38 A16 16 0 0 1 38 38" stroke="var(--amber)" stroke-width="1.6" />
+        <path d="M14 38 A8 8 0 0 1 30 38" stroke="var(--ink)" stroke-width="1.6" />
+      </svg>
+      <p class="preloader-name">Hôtel Soltane</p>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Hôtel Soltane — accueil">
+        <svg viewBox="0 0 44 40" width="30" height="28" fill="none" aria-hidden="true">
+          <path d="M6 38 A16 16 0 0 1 38 38" stroke="var(--amber)" stroke-width="2" />
+          <path d="M14 38 A8 8 0 0 1 30 38" stroke="currentColor" stroke-width="2" />
+        </svg>
+        <span class="brand-name">Hôtel Soltane</span>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="#story" data-i18n="nav1">L'adresse</a></li>
+          <li><a href="#rooms" data-i18n="nav2">Chambres</a></li>
+          <li><a href="#experiences" data-i18n="nav3">Expériences</a></li>
+          <li><a href="#gallery" data-i18n="nav4">Galerie</a></li>
+          <li><a href="#contact" data-i18n="nav5">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Langue / اللغة">
+          <button type="button" id="lang-fr" aria-pressed="true">FR</button>
+          <button type="button" id="lang-ar" aria-pressed="false">AR</button>
+        </div>
+        <button class="btn btn-amber js-booking-open" type="button" data-i18n="book">Réserver</button>
+        <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav-menu" id="mobile-menu" aria-label="Menu mobile" hidden>
+      <a href="#story" data-i18n="nav1">L'adresse</a>
+      <a href="#rooms" data-i18n="nav2">Chambres</a>
+      <a href="#experiences" data-i18n="nav3">Expériences</a>
+      <a href="#gallery" data-i18n="nav4">Galerie</a>
+      <a href="#contact" data-i18n="nav5">Contact</a>
+      <button class="btn btn-amber js-booking-open" type="button" data-i18n="book">Réserver</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="media">
+        <img src="/assets/hero-1440.webp" alt="" width="1440" height="810" fetchpriority="high" onerror="this.closest('.media').classList.add('is-fallback')">
+      </div>
+      <div class="hero-content wrap">
+        <span class="kicker" data-i18n="heroKicker">Alger — Algérie</span>
+        <h1 id="hero-title" data-i18n="heroTitle">Les heures d'ambre.</h1>
+        <p class="lead" data-i18n="heroLead">Une adresse urbaine feutrée, entre lumière minérale et calme absolu. L'hospitalité algéroise, à votre rythme.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-amber" href="#contact" data-i18n="heroCta1">Préparer votre arrivée</a>
+          <a class="btn btn-ghost" href="#story" data-i18n="heroCta2">Découvrir l'adresse</a>
+        </div>
+      </div>
+      <span class="scroll-hint" data-i18n="scroll">Défiler</span>
+    </section>
+
+    <section id="story" aria-labelledby="story-title">
+      <div class="wrap split">
+        <div class="split-text reveal">
+          <p class="caption"><span data-i18n="storyNum">01 —</span> <span data-i18n="storyCap">L'adresse</span></p>
+          <h2 id="story-title" data-i18n="storyTitle">Une parenthèse, à votre rythme.</h2>
+          <p class="lead" data-i18n="storyP1">Au cœur d'Alger, l'Hôtel Soltane compose une hospitalité faite de seuils, de lumière et d'attention. Chaque espace est pensé comme une respiration : ni ostentation, ni hâte.</p>
+          <p class="lead" style="margin-block-start:1rem" data-i18n="storyP2">Ici, le service reste discret et précis. La journée s'y déploie comme les heures d'ambre — du matin clair au soir doré.</p>
+        </div>
+        <figure class="split-media reveal">
+          <div class="media">
+            <img src="/assets/story-1080.webp" alt="" width="1080" height="1350" loading="lazy" onerror="this.closest('.media').classList.add('is-fallback')">
+          </div>
+          <figcaption class="fig-caption"><b>Fig. 01</b><span data-i18n="storyFig">Le seuil, en fin d'après-midi</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="rooms" aria-labelledby="rooms-title" style="background:var(--ivory-deep)">
+      <div class="wrap">
+        <p class="caption reveal"><span data-i18n="roomsNum">02 —</span> <span data-i18n="roomsCap">Chambres & suites</span></p>
+        <h2 id="rooms-title" class="reveal" data-i18n="roomsTitle">Le repos, en toute simplicité.</h2>
+        <p class="lead reveal" data-i18n="roomsP">140 chambres et suites réparties en 4 catégories : Chambres Twins, Chambres grand lit, Suites juniors, Suites séniors. Climatisation, minibar, coffre-fort, WiFi haut débit gratuit.</p>
+        <p class="reveal section-cta"><a class="btn btn-ghost" href="chambres.html" data-i18n="roomsCta">Découvrir les chambres</a></p>
+      </div>
+    </section>
+
+    <section id="experiences" aria-labelledby="exp-title">
+      <div class="wrap">
+        <p class="caption reveal"><span data-i18n="expNum">03 —</span> <span data-i18n="expCap">Expériences</span></p>
+        <h2 id="exp-title" class="reveal" data-i18n="expTitle">La journée Soltane.</h2>
+        <div class="rail">
+          <article class="rail-item reveal">
+            <p class="caption"><span data-i18n="exp1Num">I.</span></p>
+            <h3 data-i18n="exp1T">Le matin clair</h3>
+            <p data-i18n="exp1P">La lumière entre par les grands cadres. Le calme d'une adresse retirée, à quelques pas de la ville qui s'éveille.</p>
+          </article>
+          <article class="rail-item reveal">
+            <p class="caption"><span data-i18n="exp2Num">II.</span></p>
+            <h3 data-i18n="exp2T">L'après-midi minéral</h3>
+            <p data-i18n="exp2P">Des matières sobres, des lignes nettes. Un temps suspendu entre travail, lecture et déambulation algéroise.</p>
+          </article>
+          <article class="rail-item reveal">
+            <p class="caption"><span data-i18n="exp3Num">III.</span></p>
+            <h3 data-i18n="exp3T">Le soir doré</h3>
+            <p data-i18n="exp3P">Quand la ville s'allume, l'ambre prend le relais. La soirée appartient à ceux qui savent ralentir.</p>
+          </article>
+        </div>
+        <p class="reveal section-cta"><a class="btn btn-ghost" href="experiences.html" data-i18n="expCta">Découvrir les expériences</a></p>
+      </div>
+    </section>
+
+    <section id="gallery" aria-labelledby="gal-title" style="background:var(--ivory-deep)">
+      <div class="wrap">
+        <p class="caption reveal"><span data-i18n="galNum">04 —</span> <span data-i18n="galCap">Galerie</span></p>
+        <h2 id="gal-title" class="reveal" data-i18n="galTitle">Regards sur l'adresse.</h2>
+        <div class="gallery" aria-label="Galerie de l'Hôtel Soltane">
+          <figure class="g-a reveal" data-full="Fig. 02" data-image="/assets/gal-1-1440.webp" tabindex="0" role="button" aria-haspopup="dialog" data-i18n-aria="gal1" aria-label="La lumière de dix-sept heures">
+            <div class="media"><img src="/assets/gal-1-1440.webp" alt="" width="1440" height="900" loading="lazy" onerror="this.closest('.media').classList.add('is-fallback')"></div>
+            <figcaption class="fig-caption"><b>Fig. 02</b><span data-i18n="gal1">La lumière de dix-sept heures</span></figcaption>
+          </figure>
+          <figure class="g-b reveal" data-full="Fig. 03" data-image="/assets/gal-2-1080.webp" tabindex="0" role="button" aria-haspopup="dialog" data-i18n-aria="gal2" aria-label="Détail de service">
+            <div class="media"><img src="/assets/gal-2-1080.webp" alt="" width="1080" height="1350" loading="lazy" onerror="this.closest('.media').classList.add('is-fallback')"></div>
+            <figcaption class="fig-caption"><b>Fig. 03</b><span data-i18n="gal2">Détail de service</span></figcaption>
+          </figure>
+          <figure class="g-c reveal" data-full="Fig. 04" data-image="/assets/gal-3-1080.webp" tabindex="0" role="button" aria-haspopup="dialog" data-i18n-aria="gal3" aria-label="Matières minérales">
+            <div class="media"><img src="/assets/gal-3-1080.webp" alt="" width="1080" height="1350" loading="lazy" onerror="this.closest('.media').classList.add('is-fallback')"></div>
+            <figcaption class="fig-caption"><b>Fig. 04</b><span data-i18n="gal3">Matières minérales</span></figcaption>
+          </figure>
+          <figure class="g-d reveal" data-full="Fig. 05" data-image="/assets/gal-4-1440.webp" tabindex="0" role="button" aria-haspopup="dialog" data-i18n-aria="gal4" aria-label="L'horizon d'Alger">
+            <div class="media"><img src="/assets/gal-4-1440.webp" alt="" width="1440" height="900" loading="lazy" onerror="this.closest('.media').classList.add('is-fallback')"></div>
+            <figcaption class="fig-caption"><b>Fig. 05</b><span data-i18n="gal4">L'horizon d'Alger</span></figcaption>
+          </figure>
+        </div>
+        <p class="reveal section-cta"><a class="btn btn-ghost" href="galerie.html" data-i18n="galCta">Voir la galerie complète</a></p>
+      </div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lb-caption">
+      <div class="media is-fallback" id="lb-media">
+        <img id="lb-image" src="/assets/gal-1-1440.webp" alt="" width="1440" height="900" onerror="this.closest('.media').classList.add('is-fallback')">
+      </div>
+      <div class="lightbox-bar">
+        <p class="fig-caption" style="color:rgb(246 241 231 / 80%)"><b id="lb-num">Fig. 02</b><span id="lb-caption"></span></p>
+        <button class="lightbox-close" id="lb-close" type="button" data-i18n="close">Fermer</button>
+      </div>
+    </dialog>
+
+    <section class="band" aria-labelledby="spirit-title">
+      <div class="wrap">
+        <p class="caption reveal"><span data-i18n="spiritNum">05 —</span> <span data-i18n="spiritCap">L'esprit Soltane</span></p>
+        <blockquote id="spirit-title" class="reveal" data-i18n="spiritQuote">« Une adresse qui transforme le séjour en pause de lumière, de calme et d’attention. »</blockquote>
+        <p class="lead reveal" style="margin-block-start:1.5rem" data-i18n="spiritP">Suivez la vie de l'adresse, ses heures et ses détails, sur le compte officiel.</p>
+        <a class="insta-link reveal" href="https://www.instagram.com/hotel.soltane/" target="_blank" rel="noopener noreferrer">@hotel.soltane <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="caption reveal"><span data-i18n="contactNum">06 —</span> <span data-i18n="contactCap">Nous trouver</span></p>
+        <h2 id="contact-title" class="reveal" data-i18n="contactTitle">Préparer votre arrivée.</h2>
+        <div class="contact-grid">
+          <div class="reveal">
+            <p class="lead" data-i18n="contactP1">L'Hôtel Soltane vous accueille à Alger. Adresse : 12 Rue Mouloud Belhouchat, Hussein Dey. Aéroport 20 min, Safex 15 min, tramway 100 m, métro 200 m.</p>
+            <div class="contact-phones" aria-label="Téléphones de réservation">
+              <a href="tel:+21320224141"><bdi>+213 20 22 41 41</bdi></a>
+              <a href="tel:+21320224455"><bdi>+213 20 22 44 55</bdi></a>
+              <a href="tel:+21320224747"><bdi>+213 20 22 47 47</bdi></a>
+              <a href="tel:+21320224545"><bdi>+213 20 22 45 45</bdi></a>
+            </div>
+            <p class="note" style="margin-block-start:1.2rem" data-i18n="contactNote">Aucune réservation n'est simulée sur ce site : votre demande part directement vers l'établissement.</p>
+          </div>
+          <div class="contact-actions reveal">
+            <a class="btn btn-amber" href="mailto:reservation@hotel-soltane.com?subject=Demande%20de%20r%C3%A9servation%20%E2%80%94%20H%C3%B4tel%20Soltane&body=Bonjour%2C%0A%0AJe%20souhaite%20r%C3%A9server%20un%20s%C3%A9jour%20%C3%A0%20l%E2%80%99H%C3%B4tel%20Soltane.%0ADates%20souhait%C3%A9es%20%3A%0ANombre%20de%20personnes%20%3A%0A%0AMerci%20de%20votre%20retour." data-i18n="contactCta1">Écrire pour réserver</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/hotel.soltane/" target="_blank" rel="noopener noreferrer" data-i18n="contactCta2">Nous écrire sur Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>
+        <svg viewBox="0 0 44 40" width="36" height="33" fill="none" aria-hidden="true" style="margin-block-end:1.2rem">
+          <path d="M6 38 A16 16 0 0 1 38 38" stroke="var(--amber)" stroke-width="2" />
+          <path d="M14 38 A8 8 0 0 1 30 38" stroke="var(--ivory)" stroke-width="2" />
+        </svg>
+        <h2 data-i18n="newsTitle">Les nouvelles de l'adresse.</h2>
+        <form class="newsletter" id="newsletter" novalidate>
+          <label for="nl-email" data-i18n="newsLabel">Votre e-mail</label>
+          <input type="email" id="nl-email" name="email" required data-i18n-ph="newsPh" placeholder="votre@email.com" autocomplete="email" aria-describedby="nl-status">
+          <button type="submit" data-i18n="newsBtn">S'inscrire</button>
+        </form>
+        <p class="form-status" id="nl-status" role="status" aria-live="polite"></p>
+      </div>
+      <nav class="footer-links" aria-label="Liens de pied de page">
+        <a href="#story" data-i18n="nav1">L'adresse</a>
+        <a href="#rooms" data-i18n="nav2">Chambres</a>
+        <a href="#experiences" data-i18n="nav3">Expériences</a>
+        <a href="#gallery" data-i18n="nav4">Galerie</a>
+        <a href="#contact" data-i18n="nav5">Contact</a>
+        <a href="https://www.instagram.com/hotel.soltane/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+      </nav>
+    </div>
+    <div class="wrap footer-legal">
+      <span data-i18n="legal">© 2026 Hôtel Soltane — Alger. Tous droits réservés.</span>
+      <span data-i18n="legal2">Mentions légales à paraître.</span>
+    </div>
+  </footer>
+
+  <dialog class="booking-panel" id="booking-panel" aria-labelledby="booking-title" aria-describedby="booking-description">
+    <div class="lightbox-bar">
+      <div>
+        <p class="kicker" data-i18n="bookingLabel">Réservation</p>
+        <h2 id="booking-title" data-i18n="bookingTitle">Préparer votre arrivée.</h2>
+      </div>
+      <button class="lightbox-close" id="booking-close" type="button" data-i18n="bookingClose">Fermer</button>
+    </div>
+    <p id="booking-description" class="booking-description" data-i18n="bookingDescription">Choisissez le canal qui vous convient pour préparer votre séjour.</p>
+    <div class="booking-channels">
+      <div class="booking-channel">
+        <span class="booking-channel-label" data-i18n="bookingCall">Appeler</span>
+        <a href="tel:+21320224141"><bdi>+213 20 22 41 41</bdi></a>
+        <a href="tel:+21320224455"><bdi>+213 20 22 44 55</bdi></a>
+        <a href="tel:+21320224747"><bdi>+213 20 22 47 47</bdi></a>
+        <a href="tel:+21320224545"><bdi>+213 20 22 45 45</bdi></a>
+      </div>
+      <div class="booking-channel">
+        <span class="booking-channel-label" data-i18n="bookingEmail">Écrire pour réserver</span>
+        <a class="btn btn-ghost" href="mailto:reservation@hotel-soltane.com?subject=Demande%20de%20r%C3%A9servation%20%E2%80%94%20H%C3%B4tel%20Soltane&body=Bonjour%2C%0A%0AJe%20souhaite%20r%C3%A9server%20un%20s%C3%A9jour%20%C3%A0%20l%E2%80%99H%C3%B4tel%20Soltane.%0ADates%20souhait%C3%A9es%20%3A%0ANombre%20de%20personnes%20%3A%0A%0AMerci%20de%20votre%20retour." data-i18n="bookingEmailShort">E-mail</a>
+      </div>
+      <div class="booking-channel">
+        <span class="booking-channel-label" data-i18n="bookingWhatsapp">WhatsApp</span>
+        <button class="btn btn-ghost" type="button" disabled aria-describedby="whatsapp-note" data-i18n="bookingWhatsapp">WhatsApp</button>
+        <span class="whatsapp-note" id="whatsapp-note" data-i18n="bookingPending">à confirmer</span>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="module">
+    import { I18N, initLang, setLang } from './utils/i18n.js';
+
+    const html = document.documentElement;
+    const nav = document.getElementById('nav');
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('mobile-menu');
+    const booking = document.getElementById('booking-panel');
+    const bookingClose = document.getElementById('booking-close');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lb-image');
+    const lightboxMedia = document.getElementById('lb-media');
+    const lightboxNumber = document.getElementById('lb-num');
+    const lightboxCaption = document.getElementById('lb-caption');
+    const lightboxClose = document.getElementById('lb-close');
+    let lastLightboxTrigger = null;
+    let lastMenuFocus = null;
+
+    // [À CONFIRMER — BUILD] Development hosts receive noindex; production keeps the initial index/follow tag.
+    if (['localhost', '127.0.0.1', '::1'].includes(window.location.hostname)) {
+      const devRobots = document.createElement('meta');
+      devRobots.name = 'robots';
+      devRobots.content = 'noindex, nofollow';
+      document.head.append(devRobots);
+    }
+
+    const updateNav = () => nav.classList.toggle('is-solid', window.scrollY > 40);
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+
+    const closeMenu = ({ restoreFocus = false } = {}) => {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', html.lang === 'ar' ? 'فتح القائمة' : 'Ouvrir le menu');
+      menu.hidden = true;
+      menu.classList.remove('is-open');
+      if (restoreFocus) lastMenuFocus?.focus();
+    };
+
+    burger.addEventListener('click', () => {
+      const open = burger.getAttribute('aria-expanded') === 'true';
+      if (open) {
+        closeMenu({ restoreFocus: true });
+        return;
+      }
+      lastMenuFocus = document.activeElement;
+      burger.setAttribute('aria-expanded', 'true');
+      burger.setAttribute('aria-label', html.lang === 'ar' ? 'إغلاق القائمة' : 'Fermer le menu');
+      menu.hidden = false;
+      menu.classList.add('is-open');
+      menu.querySelector('a, button')?.focus();
+    });
+
+    menu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => closeMenu()));
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') closeMenu({ restoreFocus: true });
+    });
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const preloader = document.getElementById('preloader');
+    let hasSeenPreloader = false;
+    try { hasSeenPreloader = window.sessionStorage.getItem('soltane-seen') === '1'; } catch {}
+    if (reducedMotion || hasSeenPreloader) {
+      preloader.remove();
+    } else {
+      window.setTimeout(() => {
+        preloader.classList.add('is-done');
+        try { window.sessionStorage.setItem('soltane-seen', '1'); } catch {}
+      }, 850);
+      window.setTimeout(() => preloader.remove(), 1200);
+    }
+
+    if (reducedMotion || !('IntersectionObserver' in window)) {
+      document.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
+    } else {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: .12 });
+      document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+    }
+
+    const openBooking = () => {
+      if (booking.open) return;
+      booking.showModal();
+      bookingClose.focus();
+    };
+    document.querySelectorAll('.js-booking-open').forEach((trigger) => trigger.addEventListener('click', openBooking));
+    bookingClose.addEventListener('click', () => booking.close());
+    booking.addEventListener('click', (event) => { if (event.target === booking) booking.close(); });
+
+    const openLightbox = (figure) => {
+      lastLightboxTrigger = figure;
+      const imageSource = figure.dataset.image;
+      lightboxNumber.textContent = figure.dataset.full || '';
+      lightboxCaption.textContent = figure.querySelector('.fig-caption span')?.textContent || '';
+      lightboxImage.src = imageSource || '';
+      lightboxImage.alt = '';
+      lightboxMedia.classList.remove('is-fallback');
+      lightboxImage.onerror = () => lightboxMedia.classList.add('is-fallback');
+      lightbox.showModal();
+      lightboxClose.focus();
+    };
+
+    document.querySelectorAll('.gallery figure').forEach((figure) => {
+      figure.addEventListener('click', () => openLightbox(figure));
+      figure.addEventListener('keydown', (event) => {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        openLightbox(figure);
+      });
+    });
+    lightboxClose.addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('click', (event) => { if (event.target === lightbox) lightbox.close(); });
+    lightbox.addEventListener('close', () => lastLightboxTrigger?.focus());
+
+    document.getElementById('newsletter').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const input = document.getElementById('nl-email');
+      const status = document.getElementById('nl-status');
+      if (!input.checkValidity()) {
+        status.textContent = I18N[html.lang === 'ar' ? 'ar' : 'fr'].newsErr;
+        input.focus();
+        return;
+      }
+      status.textContent = I18N[html.lang === 'ar' ? 'ar' : 'fr'].newsOk;
+      input.value = '';
+    });
+
+    document.getElementById('lang-fr').addEventListener('click', () => {
+      setLang('fr');
+      closeMenu();
+    });
+    document.getElementById('lang-ar').addEventListener('click', () => {
+      setLang('ar');
+      closeMenu();
+    });
+    document.addEventListener('soltane:languagechange', (event) => {
+      const isArabic = event.detail.lang === 'ar';
+      const isOpen = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-label', isOpen
+        ? (isArabic ? 'إغلاق القائمة' : 'Fermer le menu')
+        : (isArabic ? 'فتح القائمة' : 'Ouvrir le menu'));
+      menu.setAttribute('aria-label', isArabic ? 'القائمة المحمولة' : 'Menu mobile');
+      document.querySelector('header nav[aria-label]')?.setAttribute('aria-label', isArabic ? 'التنقل الرئيسي' : 'Navigation principale');
+    });
+    initLang();
+  </script>
+</body>
+</html>
