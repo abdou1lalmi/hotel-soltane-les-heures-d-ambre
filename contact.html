@@ -5,27 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#F6F1E7">
 
-  <!-- [À CONFIRMER — DOMAINE] Remplacer le domaine avant mise en production finale. -->
+  <!-- GitHub Pages preview URL; the custom hotel-soltane.dz domain remains pending official confirmation. -->
   <title>Contact | Hôtel Soltane — Alger</title>
   <meta name="description" content="Contactez l'Hôtel Soltane. 12 Rue Mouloud Belhouchat, Hussein Dey, Alger. Tél: +213 20 22 41 41. E-mail: reservation@hotel-soltane.com">
   <meta name="robots" content="index, follow">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=()">
 
-  <link rel="canonical" href="https://www.hotel-soltane.dz/fr/contact">
-  <link rel="alternate" hreflang="fr" href="https://www.hotel-soltane.dz/fr/contact">
-  <link rel="alternate" hreflang="ar" href="https://www.hotel-soltane.dz/ar/contact">
-  <link rel="alternate" hreflang="x-default" href="https://www.hotel-soltane.dz/fr/contact">
+  <link rel="canonical" href="https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/contact.html">
+  <link rel="alternate" hreflang="fr" href="https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/contact.html">
+  <link rel="alternate" hreflang="ar" href="https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/contact.html">
+  <link rel="alternate" hreflang="x-default" href="https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/contact.html">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Hôtel Soltane">
   <meta property="og:title" content="Contact | Hôtel Soltane">
   <meta property="og:description" content="Contactez l'Hôtel Soltane. 12 Rue Mouloud Belhouchat, Hussein Dey, Alger. Tél: +213 20 22 41 41.">
-  <meta property="og:url" content="https://www.hotel-soltane.dz/fr/contact">
+  <meta property="og:url" content="https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/contact.html">
   <meta property="og:locale" content="fr_DZ">
   <meta property="og:locale:alternate" content="ar_DZ">
   <!-- [À CONFIRMER — IMAGE SOCIALE] Remplacer l'image placeholder par le visuel OG final. -->
-  <meta property="og:image" content="https://www.hotel-soltane.dz/assets/og-cover.jpg">
+  <meta property="og:image" content="https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/assets/hero-1440.webp">
   <meta name="twitter:card" content="summary_large_image">
 
   <script type="application/ld+json">
@@ -225,7 +225,7 @@
     <section class="hero-compact" id="top" aria-labelledby="contact-title">
       <div class="media">
         <!-- [À CONFIRMER — PHOTOS] Placeholder asset only; no invented contact photography is used. -->
-        <img src="/assets/contact-hero-1440.webp" alt="" width="1440" height="900" fetchpriority="high" onerror="this.closest('.media').classList.add('is-fallback')">
+        <img src="assets/contact-hero-1440.webp" alt="" width="1440" height="900" fetchpriority="high" onerror="this.closest('.media').classList.add('is-fallback')">
       </div>
       <div class="hero-compact-content wrap">
         <span class="kicker" data-i18n="contactKicker">Contact</span>
@@ -259,7 +259,7 @@
             <a class="btn btn-amber" href="tel:+21320224141"><span data-i18n="bookCall">Appeler</span> <bdi class="visually-hidden">+213 20 22 41 41</bdi></a>
             <a class="btn btn-ghost" href="mailto:reservation@hotel-soltane.com?subject=Demande%20de%20r%C3%A9servation%20%E2%80%94%20H%C3%B4tel%20Soltane&body=Bonjour%2C%0A%0AJe%20souhaite%20r%C3%A9server%20un%20s%C3%A9jour%20%C3%A0%20l%E2%80%99H%C3%B4tel%20Soltane.%0ADates%20souhait%C3%A9es%20%3A%0ANombre%20de%20personnes%20%3A%0A%0AMerci%20de%20votre%20retour." data-i18n="bookEmail">Écrire pour réserver</a>
             <a class="btn btn-ghost" href="https://www.instagram.com/hotel.soltane/" target="_blank" rel="noopener noreferrer" data-i18n="bookInsta">Nous écrire sur Instagram</a>
-            <!-- [À CONFIRMER — WHATSAPP] Le numéro officiel WhatsApp n'est pas encore confirmé. -->
+            <!-- WhatsApp remains disabled until the official number is confirmed. Le numéro officiel WhatsApp n'est pas encore confirmé. -->
             <button class="btn btn-ghost" type="button" disabled title="Numéro à confirmer" data-i18n="bookWhatsapp">WhatsApp (à confirmer)</button>
           </div>
         </div>
@@ -316,8 +316,8 @@
     const menu = document.getElementById('mobile-menu');
     let lastMenuFocus = null;
 
-    // [À CONFIRMER — BUILD] Development hosts receive noindex; production keeps the initial index/follow tag.
-    if (['localhost', '127.0.0.1', '::1'].includes(window.location.hostname)) {
+    // Local loopback previews receive noindex; the deployed GitHub Pages site keeps index/follow.
+    if (['127.0.0.1', '::1'].includes(window.location.hostname)) {
       const devRobots = document.createElement('meta');
       devRobots.name = 'robots';
       devRobots.content = 'noindex, nofollow';

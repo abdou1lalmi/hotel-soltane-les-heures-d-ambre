@@ -2,7 +2,7 @@
 
 This package contains the static Hôtel Soltane website foundation and five page files: `index.html`, `chambres.html`, `experiences.html`, `galerie.html`, and `contact.html`. The pages share `tokens.css`, `base.css`, `typography.css`, and `utils/i18n.js`. The implementation is dependency-light and can be served from any static host.
 
-> **Production note:** The canonical domain `https://www.hotel-soltane.dz` is marked **À CONFIRMER — DOMAINE** throughout the source. Replace it before launch if the final domain differs.
+> **Production note:** The canonical domain `hotel-soltane.dz` remains the pending custom production domain; GitHub Pages is the current preview host. Replace it before launch if the final domain differs.
 
 ## Run locally
 
@@ -12,7 +12,7 @@ From the project root, start any static server. For example:
 python3 -m http.server 4173
 ```
 
-Then open `http://localhost:4173/index.html`. The pages rely on ES modules, so do not open them directly from `file://` in a browser.
+Then open `http://127.0.0.1:4173/index.html`. The pages rely on ES modules, so do not open them directly from `file://` in a browser.
 
 ## Pages and shared files
 
@@ -25,18 +25,19 @@ Then open `http://localhost:4173/index.html`. The pages rely on ES modules, so d
 | `contact.html` | Verified address, distances, booking channels, Google Maps, and hours. |
 | `utils/i18n.js` | Shared French/Arabic dictionary, persisted language, document direction, and localized accessibility labels. |
 | `tokens.css`, `base.css`, `typography.css` | Phase A design tokens, global accessibility/reset rules, and fluid typography. |
-| `sitemap.xml`, `robots.txt` | Search-engine discovery files. Confirm the production domain first. |
+| `sitemap.xml`, `robots.txt` | Search-engine discovery files using the current GitHub Pages preview URL. |
+| `404.html` | Localized GitHub Pages not-found document with FR/AR toggle. |
 | `QA_REPORT.md` | Final structural, accessibility, interaction, and Lighthouse results. |
 
 ## How to replace images
 
-Place optimized assets in `/assets/` and keep the filenames referenced by the page markup. Each image slot already includes intrinsic width/height attributes, lazy loading where appropriate, and a gradient fallback if the asset cannot load. The site currently includes one generated asset, `assets/hero-1440.webp`; the remaining image references intentionally retain their existing fallback behavior until approved hotel photography is supplied.
+Place optimized assets in `assets/` and keep the filenames referenced by the page markup. Each image slot includes intrinsic width/height attributes, lazy loading where appropriate, and a gradient fallback only for an unexpected load failure. Every currently referenced slot is included as a project-local WebP derivative so its production request returns HTTP 200; replace those derivatives with final hotel photography when supplied.
 
 Do not overwrite a photo with an unlicensed image. Keep the same subject and approximate aspect ratio for each slot so the editorial layout remains stable. After replacing files, verify the five pages at desktop, tablet, and mobile widths and confirm that every image has either a descriptive `alt` value or `alt=""` when it is purely decorative and already explained by adjacent text/captions.
 
 ## How to update the domain
 
-Search the project for `www.hotel-soltane.dz` and replace every occurrence with the confirmed production domain. Update all of the following together:
+Search the project for the GitHub Pages preview host and replace it with the confirmed `hotel-soltane.dz` domain only after official approval. Update all of the following together:
 
 1. The canonical URL in each HTML head.
 2. The `hreflang` alternate URLs.
@@ -100,7 +101,7 @@ Use `PHOTO_AUTHORIZATION_TEMPLATE.md` as a starting point for written authorizat
 
 ## QA checklist
 
-The final audit should be repeated after approved photos and the production domain are in place.
+The final audit should be repeated after final approved photography and the custom production domain are in place; the current GitHub Pages preview audit is recorded in `QA_REPORT.md`.
 
 | Check | Status in this package |
 | --- | --- |
@@ -117,4 +118,4 @@ The final audit should be repeated after approved photos and the production doma
 
 ## Deployment note
 
-The source is ready for a static host. GitHub Pages is suitable after the repository visibility and Pages policy are confirmed. If the repository remains private on a GitHub plan that does not support Pages for private repositories, use an approved static host instead and set the final canonical domain accordingly.
+The source is deployed on GitHub Pages from the public `main` branch. The project-relative paths, sitemap, robots.txt, and preview metadata use the GitHub Pages project URL. The custom `hotel-soltane.dz` domain remains pending official confirmation and should replace the preview URL only after approval.

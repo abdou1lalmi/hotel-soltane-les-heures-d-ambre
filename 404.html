@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr" dir="ltr" data-page="error">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F6F1E7">
+  <meta name="robots" content="noindex, follow">
+  <title>Page introuvable | Hôtel Soltane — Alger</title>
+  <link rel="stylesheet" href="./tokens.css">
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./typography.css">
+  <style>
+    :root { --line: rgb(33 29 25 / 14%); }
+    body { min-block-size: 100svh; display: grid; place-items: center; background: var(--ivory); color: var(--ink); }
+    .error-page { inline-size: min(100% - 2.5rem, 720px); padding-block: 4rem; text-align: center; }
+    .monogram { inline-size: 54px; margin-inline: auto; }
+    .error-page h1 { margin-block: 1.5rem 1rem; }
+    .error-page p { max-inline-size: 48ch; margin-inline: auto; color: var(--ink-soft); }
+    .error-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem; margin-block-start: 2rem; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: .85rem 1.35rem; border: 1px solid var(--ink); color: var(--ink); font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-decoration: none; text-transform: uppercase; }
+    .btn-primary { border-color: var(--amber); background: var(--amber); color: var(--ivory); }
+    .lang-switch { display: flex; justify-content: center; gap: .75rem; margin-block-start: 2.5rem; }
+    .lang-switch button { padding: .3rem .5rem; color: var(--ink); }
+    .lang-switch button[aria-pressed="true"] { text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: .35rem; }
+  </style>
+</head>
+<body>
+  <main class="error-page" id="main" aria-labelledby="error-title">
+    <svg class="monogram" viewBox="0 0 44 40" fill="none" aria-hidden="true">
+      <path d="M6 38 A16 16 0 0 1 38 38" stroke="var(--amber)" stroke-width="2" />
+      <path d="M14 38 A8 8 0 0 1 30 38" stroke="var(--ink)" stroke-width="2" />
+    </svg>
+    <p class="caption" data-i18n="errorCaption">404 — Page introuvable</p>
+    <h1 id="error-title" data-i18n="errorTitle">La page s’est égarée.</h1>
+    <p data-i18n="errorLead">Revenez à l’adresse pour poursuivre votre découverte de l’Hôtel Soltane.</p>
+    <div class="error-actions">
+      <a class="btn btn-primary" href="index.html" data-i18n="errorHome">Retour à l’accueil</a>
+      <a class="btn" href="contact.html" data-i18n="nav5">Contact</a>
+    </div>
+    <div class="lang-switch" aria-label="Choisir la langue">
+      <button type="button" id="lang-fr" aria-pressed="true">FR</button>
+      <button type="button" id="lang-ar" aria-pressed="false">AR</button>
+    </div>
+  </main>
+  <script type="module">
+    import { initLang, setLang } from './utils/i18n.js';
+    document.getElementById('lang-fr')?.addEventListener('click', () => setLang('fr'));
+    document.getElementById('lang-ar')?.addEventListener('click', () => setLang('ar'));
+    initLang();
+  </script>
+</body>
+</html>

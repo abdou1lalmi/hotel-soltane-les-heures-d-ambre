@@ -1,5 +1,5 @@
-# [À CONFIRMER — DOMAINE] Replace the sitemap host if the final production domain differs.
+# GitHub Pages preview; the custom hotel-soltane.dz domain remains pending official confirmation.
 User-agent: *
 Allow: /
 
-Sitemap: https://www.hotel-soltane.dz/sitemap.xml
+Sitemap: https://abdou1lalmi.github.io/hotel-soltane-les-heures-d-ambre/sitemap.xml

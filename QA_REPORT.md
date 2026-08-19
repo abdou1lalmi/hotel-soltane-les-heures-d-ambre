@@ -34,4 +34,4 @@ Google Rich Results Test should be run against the deployed production URLs afte
 
 ## Known content state
 
-The generated `/assets/hero-1440.webp` is present and optimized. Other requested hotel photographs remain unprovided and retain the existing gradient fallback behavior, as instructed. The WhatsApp CTA remains disabled until the official number is confirmed. The canonical domain is marked `[À CONFIRMER — DOMAINE]` in the source and handoff documentation.
+The generated `assets/hero-1440.webp` is present and optimized. Other requested hotel photographs remain unprovided and retain the existing gradient fallback behavior, as instructed. The WhatsApp CTA remains disabled until the official number is confirmed. The canonical domain is marked `the custom hotel-soltane.dz domain remains pending official confirmation` in the source and handoff documentation.

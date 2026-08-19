@@ -177,6 +177,10 @@ export const I18N = {
     newsErr: 'Merci de saisir un e-mail valide.',
     legal: '© 2026 Hôtel Soltane — Alger. Tous droits réservés.',
     legal2: 'Mentions légales à paraître.',
+    errorCaption: '404 — Page introuvable',
+    errorTitle: 'La page s’est égarée.',
+    errorLead: 'Revenez à l’adresse pour poursuivre votre découverte de l’Hôtel Soltane.',
+    errorHome: 'Retour à l’accueil',
   },
   ar: {
     skip: 'انتقل إلى المحتوى',
@@ -356,6 +360,10 @@ export const I18N = {
     newsErr: 'يرجى إدخال بريدٍ إلكترونيٍّ صالح.',
     legal: '© 2026 فندق سلطان — الجزائر العاصمة. جميع الحقوق محفوظة.',
     legal2: 'الإشعارات القانونية قريبًا.',
+    errorCaption: '404 — الصفحة غير موجودة',
+    errorTitle: 'ضلّت الصفحة طريقها.',
+    errorLead: 'عُد إلى العنوان لمتابعة اكتشافك لفندق سلطان.',
+    errorHome: 'العودة إلى الصفحة الرئيسية',
   },
 };
 
@@ -370,6 +378,8 @@ const TITLES = {
   galleryAr: 'المعرض | فندق سلطان — الجزائر العاصمة',
   contactFr: 'Contact | Hôtel Soltane — Alger',
   contactAr: 'اتصل بنا | فندق سلطان — الجزائر العاصمة',
+  errorFr: 'Page introuvable | Hôtel Soltane — Alger',
+  errorAr: 'الصفحة غير موجودة | فندق سلطان — الجزائر العاصمة',
 };
 
 function readStoredLanguage() {
@@ -425,7 +435,9 @@ export function setLang(lang = 'fr') {
         ? TITLES[nextLang === 'ar' ? 'galleryAr' : 'galleryFr']
         : html.dataset.page === 'contact'
           ? TITLES[nextLang === 'ar' ? 'contactAr' : 'contactFr']
-          : TITLES[nextLang];
+          : html.dataset.page === 'error'
+            ? TITLES[nextLang === 'ar' ? 'errorAr' : 'errorFr']
+            : TITLES[nextLang];
 
   document.getElementById('lang-fr')?.setAttribute('aria-pressed', String(nextLang === 'fr'));
   document.getElementById('lang-ar')?.setAttribute('aria-pressed', String(nextLang === 'ar'));
